@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="(item,id) of testInfo"> {{item}}</li>
-    </ul>
+    
+    <echart-radar :radarInfo="radarInfo"></echart-radar>
+  
   </div>
 </template>
 
 <script>
+import EchartRadar from './components/EchartRadar'
+
 export default {
   name: 'App',
+  components: {
+    EchartRadar : EchartRadar
+  },
   data : function(){
     return {
-      testInfo : {}
+      testInfo : {},
+      radarInfo : {},
+
     }
   },
   created : function(){
@@ -27,6 +34,41 @@ export default {
         that.testInfo = info;
       }
     )
+
+    // 获取雷达图数据
+    this.radarInfo = {
+      title : {
+        text : "雷达图"
+      },
+      legend : {
+        data: ['预算分配（Allocated Budget）', '实际开销（Actual Spending）']
+      },
+      radar: {
+        indicator: [
+        { name: '销售（Sales）', max: 6500},
+        { name: '管理（Administration）', max: 16000},
+        { name: '信息技术（Information Technology）', max: 30000},
+        { name: '客服（Customer Support）', max: 38000},
+        { name: '研发（Development）', max: 52000},
+        { name: '市场（Marketing）', max: 25000}
+        ]
+      },
+      series: {
+        name: '预算 vs 开销（Budget vs spending）',
+        type: 'radar',
+        data: [
+          {
+              value: [4200, 3000, 20000, 35000, 50000, 18000],
+              name: '预算分配（Allocated Budget）'
+          },
+          {
+              value: [5000, 14000, 28000, 26000, 42000, 21000],
+              name: '实际开销（Actual Spending）'
+          }
+        ]
+      }
+    };
+
   }
 }
 </script>
