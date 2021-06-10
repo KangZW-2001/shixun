@@ -1,2 +1,8 @@
-package com.kangzw.practicetrain.service;public class TestS {
+package com.kangzw.practicetrain.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class TestS {
+
 }
