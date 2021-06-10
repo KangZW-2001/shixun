@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    
-    <echart-radar :radarInfo="radarInfo"></echart-radar>
-  
+    <router-view/>
   </div>
 </template>
 
