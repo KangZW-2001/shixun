@@ -1,22 +1,29 @@
 <template>
-  <div class="radar" id="radar-echart">
+  <div>
+    <h2>这里是子页面,（私人定制页面）</h2>
+    <el-button icon="el-icon-back" circle @click="back"></el-button>  
+    <!-- 用来容纳 -->
+    <!-- <div class="radar" id="radar-echart">
+    </div> -->
+    <echart-radar style="border:1px solid red" v-if="isRadarInfo" :radarInfo="radarInfo"></echart-radar>
   </div>
 </template>
 
 <script>
+import EchartRadar from '../components/EchartRadar.vue'
 export default {
-  name: 'radar',
-  props: ['radarInfo'],
+  name: 'SubPage',
+  components: {
+    EchartRadar: EchartRadar
+  },
   data: function(){
     return {
-      // radarInfo: {},
-      radarInfoChild : this.radarInfo,
-      option : {}
+      radarInfo: {},
+      isRadarInfo: false
     }
   },
   created: function(){
-    console.log("执行了子组件的created函数");
-    console.log(this.radarInfoChild);
+    // 获取雷达图数据
     // this.radarInfo = {
     //   title : {
     //     text : "雷达图"
@@ -49,27 +56,29 @@ export default {
     //     ]
     //   }
     // };
-    this.option.legend = this.radarInfo.legend;
-    this.option.title = this.radarInfo.title;
-    this.option.radar = this.radarInfo.radar;
-    this.option.series = this.radarInfo.series;
-  },
-  mounted: function(){
-    this.loadGraph();
+    var that = this;
+    this.$axios({
+      method: "get",
+      url: "http://localhost:8080/radar"      
+    }).then(
+      function(response){
+        console.log(response.data);
+        that.radarInfo = response.data;
+        that.isRadarInfo = true;
+      },
+      function(error){
+        console.log(error);
+      }
+    )
   },
   methods: {
-    loadGraph: function(){
-      var myChart = this.$echarts.init(document.getElementById("radar-echart"));
-      this.option && myChart.setOption(this.option)
+    back: function(){
+     this.$router.replace('/main'); 
     }
   }
 }
 </script>
 
 <style scoped>
-  .radar{
-    width: 400px;
-    height: 450px;
-    margin: 0 auto;
-  }
+
 </style>

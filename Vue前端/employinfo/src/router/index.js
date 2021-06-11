@@ -1,27 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Input from '@/components/Input'
 import MainPage from '@/pages/MainPage'
+import SubPage from '@/pages/SubPage'
+import City from '@/components/City'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
       path: '/input',
       name: 'Input',
       component: Input
     },
     {
-      path: '/mp',
+      path: '/sub',
+      name: 'SubPage',
+      component: SubPage
+    },
+    {
+      path: '/main',
       name: 'MainPage',
       component: MainPage
+    },
+    {
+      path: '/city',
+      name: 'City',
+      component: City
     }
   ]
 })

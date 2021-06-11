@@ -1,5 +1,12 @@
 <template>  
-  <input-com></input-com>
+<div>
+  <h2>这里是主页面</h2>
+    <div class="input-box">
+      <input-com @handleinputc="handleinputp"></input-com>
+      <el-button id="button-to-sub" icon="el-icon-back" circle @click="back"></el-button>
+  </div>
+</div>
+
 </template>
 
 <script>
@@ -16,12 +23,18 @@ export default {
     }
   },
   methods : {
-
+    handleinputp : function(inputValue){
+      console.log("调用了enter函数");
+      console.log(inputValue);
+    },
+    back : function(){
+      this.$router.replace('/sub')
+    }
   }
 }
 
 </script>
 
 <style scoped>
-
+  
 </style>
