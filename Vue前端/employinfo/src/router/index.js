@@ -4,6 +4,8 @@ import Input from '@/components/Input'
 import MainPage from '@/pages/MainPage'
 import SubPage from '@/pages/SubPage'
 import City from '@/components/City'
+import IndexPage from '@/pages/IndexPage'
+
 
 Vue.use(Router)
 
@@ -25,9 +27,10 @@ export default new Router({
       component: MainPage
     },
     {
-      path: '/city',
-      name: 'City',
-      component: City
-    }
+      path: '/indexpage',
+      name: 'IndexPage',
+      component: IndexPage
+    },
+
   ]
 })
