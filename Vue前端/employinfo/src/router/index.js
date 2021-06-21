@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Input from '@/components/Input'
 import MainPage from '@/pages/MainPage'
 import SubPage from '@/pages/SubPage'
-import City from '@/components/City'
 import IndexPage from '@/pages/IndexPage'
 
 
