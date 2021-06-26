@@ -122,13 +122,16 @@
         <el-button type="info" round>确认</el-button>
       </div>
     </div>
-
+    <div class="fore-box" v-text="'预测您的薪资：'+foreSalary"></div>
+        
     <!-- 渲染从后端获取到的数据 -->
     <div class="answer">
-      <!--  -->
+      <!-- 左边栏信息 -->
       <div class="data-info">
         <div class="left-mask" v-if="isMaskShow"></div>
+        
         <div class="left-info-box" v-show="isLeftInfo" v-for="(item,index) in leftInfo" :key="index">
+          
           
           <div class="info-box">
             <div class="info-title">公司：</div>
@@ -207,6 +210,7 @@ export default {
   name: "SubPage",
   data: function () {
     return {
+      foreSalary: "请填写信息",
       chartIdArray: ["chart1", "chart2", "chart3", "chart4", "chart5"],
       sliderValue: 5,
       minValue: 5,
@@ -326,7 +330,7 @@ export default {
         },
         {
           value: 5,
-          label: "5年以上",
+          label: "5年及以上",
         },
       ],
       comTypeInfo: [
@@ -372,7 +376,7 @@ export default {
         },
         {
           value: 11,
-          label: "其他",
+          label: "任意",
         },
       ],
       comSizeInfo: [
@@ -404,6 +408,10 @@ export default {
           value: 0,
           label: "20人以下",
         },
+        {
+          value: 3,
+          label: "任意"
+        }
       ],
 
       jobValue: "",
@@ -441,7 +449,9 @@ export default {
 
       // ipAddr: "http://192.168.30.51:8000",
       // ipAddr: "http://172.23.205.170:8000",
-      ipAddr: "http://172.20.10.9:8000",
+      ipAddr: "http://172.23.108.65:8000",
+      
+
       test: false
     };
   },
@@ -488,6 +498,7 @@ export default {
         console.log(error);
       }
     );
+
 
     this.comSizeChartInfo = {
       title: {
@@ -698,8 +709,6 @@ export default {
         },
       ],
     };
-
-
   },
   mounted: function () {
     var chartDom = document.getElementById("chart1");
@@ -746,9 +755,11 @@ export default {
         this.cityValue.length != "" &&
         this.skillValue.length != 0 &&
         this.timeValue.length != "" &&
-        this.comTypeValue.length != "" &&
         this.comSizeValue.length != ""
       ) {
+        if(this.comTypeValue == ""){
+          this.comTypeValue = '10';
+        }
         console.log("选择的职业为 : " + this.jobValue);
         console.log("选择的学历为 : " + this.eduValue);
         console.log("选择的城市为 : " + this.cityValue);
@@ -762,6 +773,7 @@ export default {
       }
     },
     refreshChart: function () {
+      // this.foreSalary = 10000;
       var that = this;
       this.sliderValue = 5;
       if (this.test == false) {
@@ -904,6 +916,21 @@ export default {
         }
       );
       console.log("执行了刷新函数");
+
+      that.foreSalary = "正在预测..."
+      this.$axios({
+        method: "get",
+        url: this.ipAddr+"/getSalaryPrediction/location="+this.cityValue+"&job="+this.jobValue+"&education="+this.eduValue+"&experience="+this.timeValue+"&skill="+skillString+"&company_system="+this.comTypeValue+"&company_people="+this.comSizeValue
+      }).then(
+        function(response){
+          console.log("打印获取到的薪资");
+          that.foreSalary = "￥"+response.data;
+          console.log(response);
+        },
+        function(error){
+          console.log(error);
+        } 
+      )
     },
     changeValue: function (num) {
       var that = this;
@@ -939,6 +966,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("../css/reset.css");
+/* @import url("../css/reset.css"); */
 @import url("../css/subpage.css");
 </style>

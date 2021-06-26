@@ -102,8 +102,9 @@
   margin: 10px auto;
 }
 .drawer-info{
-  font-size: 25px;
-  border: solid 2px green;
+  font-size: 21px;
+  padding: 20px;
+  /* border: solid 2px green; */
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
