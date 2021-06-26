@@ -1,0 +1,4958 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 本机
+ Source Server Type    : MongoDB
+ Source Server Version : 40406
+ Source Host           : localhost:27017
+ Source Schema         : employInfo
+
+ Target Server Type    : MongoDB
+ Target Server Version : 40406
+ File Encoding         : 65001
+
+ Date: 26/06/2021 09:08:53
+*/
+
+
+// ----------------------------
+// Collection structure for cityinfo
+// ----------------------------
+db.getCollection("cityinfo").drop();
+db.createCollection("cityinfo");
+
+// ----------------------------
+// Documents of cityinfo
+// ----------------------------
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e80"),
+    city: "北京",
+    ID: "530"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e81"),
+    city: "河北",
+    ID: "532"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e82"),
+    city: "山西",
+    ID: "533"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e83"),
+    city: "内蒙古",
+    ID: "534"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e84"),
+    city: "辽宁",
+    ID: "535"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e85"),
+    city: "吉林",
+    ID: "536"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e86"),
+    city: "黑龙江",
+    ID: "537"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e87"),
+    city: "上海",
+    ID: "538"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e88"),
+    city: "江苏",
+    ID: "539"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e89"),
+    city: "浙江",
+    ID: "540"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8a"),
+    city: "安徽",
+    ID: "541"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8b"),
+    city: "福建",
+    ID: "542"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8c"),
+    city: "江西",
+    ID: "543"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8d"),
+    city: "山东",
+    ID: "544"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8e"),
+    city: "河南",
+    ID: "545"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e8f"),
+    city: "湖北",
+    ID: "546"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e90"),
+    city: "湖南",
+    ID: "547"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e91"),
+    city: "广东",
+    ID: "548"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e92"),
+    city: "广西",
+    ID: "549"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e93"),
+    city: "海南",
+    ID: "550"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e94"),
+    city: "重庆",
+    ID: "551"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e95"),
+    city: "四川",
+    ID: "552"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e96"),
+    city: "贵州",
+    ID: "553"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e97"),
+    city: "云南",
+    ID: "554"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e98"),
+    city: "西藏",
+    ID: "555"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e99"),
+    city: "陕西",
+    ID: "556"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9a"),
+    city: "甘肃",
+    ID: "557"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9b"),
+    city: "青海",
+    ID: "558"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9c"),
+    city: "宁夏",
+    ID: "559"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9d"),
+    city: "新疆",
+    ID: "560"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9e"),
+    city: "香港",
+    ID: "561"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900e9f"),
+    city: "澳门",
+    ID: "562"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea0"),
+    city: "台湾",
+    ID: "563"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea1"),
+    city: "石家庄",
+    ID: "565"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea2"),
+    city: "唐山",
+    ID: "566"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea3"),
+    city: "秦皇岛",
+    ID: "567"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea4"),
+    city: "邯郸",
+    ID: "568"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea5"),
+    city: "邢台",
+    ID: "569"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea6"),
+    city: "保定",
+    ID: "570"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea7"),
+    city: "张家口",
+    ID: "571"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea8"),
+    city: "承德",
+    ID: "572"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ea9"),
+    city: "沧州",
+    ID: "573"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eaa"),
+    city: "廊坊",
+    ID: "574"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eab"),
+    city: "衡水",
+    ID: "575"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eac"),
+    city: "太原",
+    ID: "576"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ead"),
+    city: "大同",
+    ID: "577"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eae"),
+    city: "阳泉",
+    ID: "578"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eaf"),
+    city: "长治",
+    ID: "579"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb0"),
+    city: "晋城",
+    ID: "580"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb1"),
+    city: "朔州",
+    ID: "581"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb2"),
+    city: "晋中",
+    ID: "582"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb3"),
+    city: "运城",
+    ID: "583"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb4"),
+    city: "忻州",
+    ID: "584"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb5"),
+    city: "临汾",
+    ID: "585"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb6"),
+    city: "吕梁",
+    ID: "586"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb7"),
+    city: "呼和浩特",
+    ID: "587"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb8"),
+    city: "包头",
+    ID: "588"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eb9"),
+    city: "乌海",
+    ID: "589"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eba"),
+    city: "赤峰",
+    ID: "590"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ebb"),
+    city: "通辽",
+    ID: "591"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ebc"),
+    city: "鄂尔多斯",
+    ID: "592"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ebd"),
+    city: "呼伦贝尔",
+    ID: "593"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ebe"),
+    city: "兴安盟",
+    ID: "594"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ebf"),
+    city: "锡林郭勒盟",
+    ID: "595"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec0"),
+    city: "乌兰察布",
+    ID: "596"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec1"),
+    city: "巴彦淖尔",
+    ID: "597"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec2"),
+    city: "阿拉善盟",
+    ID: "598"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec3"),
+    city: "沈阳",
+    ID: "599"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec4"),
+    city: "大连",
+    ID: "600"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec5"),
+    city: "鞍山",
+    ID: "601"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec6"),
+    city: "抚顺",
+    ID: "602"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec7"),
+    city: "本溪",
+    ID: "603"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec8"),
+    city: "丹东",
+    ID: "604"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ec9"),
+    city: "锦州",
+    ID: "605"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eca"),
+    city: "营口",
+    ID: "606"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ecb"),
+    city: "阜新",
+    ID: "607"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ecc"),
+    city: "辽阳",
+    ID: "608"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ecd"),
+    city: "盘锦",
+    ID: "609"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ece"),
+    city: "铁岭",
+    ID: "610"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ecf"),
+    city: "朝阳",
+    ID: "611"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed0"),
+    city: "葫芦岛",
+    ID: "612"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed1"),
+    city: "长春",
+    ID: "613"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed2"),
+    city: "吉林市",
+    ID: "614"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed3"),
+    city: "四平",
+    ID: "615"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed4"),
+    city: "辽源",
+    ID: "616"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed5"),
+    city: "通化",
+    ID: "617"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed6"),
+    city: "白山",
+    ID: "618"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed7"),
+    city: "松原",
+    ID: "619"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed8"),
+    city: "白城",
+    ID: "620"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ed9"),
+    city: "延边",
+    ID: "621"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eda"),
+    city: "哈尔滨",
+    ID: "622"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900edb"),
+    city: "齐齐哈尔",
+    ID: "623"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900edc"),
+    city: "鸡西",
+    ID: "624"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900edd"),
+    city: "鹤岗",
+    ID: "625"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ede"),
+    city: "双鸭山",
+    ID: "626"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900edf"),
+    city: "大庆",
+    ID: "627"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee0"),
+    city: "伊春",
+    ID: "628"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee1"),
+    city: "佳木斯",
+    ID: "629"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee2"),
+    city: "七台河",
+    ID: "630"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee3"),
+    city: "牡丹江",
+    ID: "631"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee4"),
+    city: "黑河",
+    ID: "632"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee5"),
+    city: "绥化",
+    ID: "633"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee6"),
+    city: "大兴安岭",
+    ID: "634"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee7"),
+    city: "南京",
+    ID: "635"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee8"),
+    city: "无锡",
+    ID: "636"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ee9"),
+    city: "徐州",
+    ID: "637"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eea"),
+    city: "常州",
+    ID: "638"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eeb"),
+    city: "苏州",
+    ID: "639"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eec"),
+    city: "南通",
+    ID: "641"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eed"),
+    city: "连云港",
+    ID: "642"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eee"),
+    city: "淮安",
+    ID: "643"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eef"),
+    city: "盐城",
+    ID: "644"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef0"),
+    city: "扬州",
+    ID: "645"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef1"),
+    city: "镇江",
+    ID: "646"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef2"),
+    city: "泰州",
+    ID: "647"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef3"),
+    city: "宿迁",
+    ID: "648"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef4"),
+    city: "杭州",
+    ID: "653"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef5"),
+    city: "宁波",
+    ID: "654"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef6"),
+    city: "温州",
+    ID: "655"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef7"),
+    city: "嘉兴",
+    ID: "656"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef8"),
+    city: "湖州",
+    ID: "657"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900ef9"),
+    city: "绍兴",
+    ID: "658"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900efa"),
+    city: "金华",
+    ID: "659"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900efb"),
+    city: "衢州",
+    ID: "660"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900efc"),
+    city: "舟山",
+    ID: "661"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900efd"),
+    city: "台州",
+    ID: "662"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900efe"),
+    city: "丽水",
+    ID: "663"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900eff"),
+    city: "合肥",
+    ID: "664"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f00"),
+    city: "芜湖",
+    ID: "665"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f01"),
+    city: "蚌埠",
+    ID: "666"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f02"),
+    city: "淮南",
+    ID: "667"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f03"),
+    city: "马鞍山",
+    ID: "668"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f04"),
+    city: "淮北",
+    ID: "669"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f05"),
+    city: "铜陵",
+    ID: "670"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f06"),
+    city: "安庆",
+    ID: "671"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f07"),
+    city: "黄山",
+    ID: "672"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f08"),
+    city: "滁州",
+    ID: "673"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f09"),
+    city: "阜阳",
+    ID: "674"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0a"),
+    city: "宿州",
+    ID: "675"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0b"),
+    city: "六安",
+    ID: "677"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0c"),
+    city: "亳州",
+    ID: "678"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0d"),
+    city: "池州",
+    ID: "679"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0e"),
+    city: "宣城",
+    ID: "680"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f0f"),
+    city: "福州",
+    ID: "681"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f10"),
+    city: "厦门",
+    ID: "682"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f11"),
+    city: "莆田",
+    ID: "683"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f12"),
+    city: "三明",
+    ID: "684"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f13"),
+    city: "泉州",
+    ID: "685"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f14"),
+    city: "漳州",
+    ID: "687"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f15"),
+    city: "南平",
+    ID: "688"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f16"),
+    city: "龙岩",
+    ID: "689"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f17"),
+    city: "宁德",
+    ID: "690"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f18"),
+    city: "南昌",
+    ID: "691"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f19"),
+    city: "景德镇",
+    ID: "692"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1a"),
+    city: "萍乡",
+    ID: "693"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1b"),
+    city: "九江",
+    ID: "694"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1c"),
+    city: "新余",
+    ID: "695"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1d"),
+    city: "鹰潭",
+    ID: "696"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1e"),
+    city: "赣州",
+    ID: "697"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f1f"),
+    city: "吉安",
+    ID: "698"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f20"),
+    city: "宜春",
+    ID: "699"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f21"),
+    city: "抚州",
+    ID: "700"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f22"),
+    city: "上饶",
+    ID: "701"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f23"),
+    city: "济南",
+    ID: "702"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f24"),
+    city: "青岛",
+    ID: "703"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f25"),
+    city: "淄博",
+    ID: "704"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f26"),
+    city: "枣庄",
+    ID: "705"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f27"),
+    city: "东营",
+    ID: "706"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f28"),
+    city: "烟台",
+    ID: "707"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f29"),
+    city: "潍坊",
+    ID: "708"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2a"),
+    city: "济宁",
+    ID: "709"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2b"),
+    city: "泰安",
+    ID: "710"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2c"),
+    city: "威海",
+    ID: "711"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2d"),
+    city: "日照",
+    ID: "712"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2e"),
+    city: "临沂",
+    ID: "714"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f2f"),
+    city: "德州",
+    ID: "715"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f30"),
+    city: "聊城",
+    ID: "716"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f31"),
+    city: "滨州",
+    ID: "717"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f32"),
+    city: "菏泽",
+    ID: "718"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f33"),
+    city: "郑州",
+    ID: "719"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f34"),
+    city: "开封",
+    ID: "720"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f35"),
+    city: "洛阳",
+    ID: "721"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f36"),
+    city: "平顶山",
+    ID: "722"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f37"),
+    city: "安阳",
+    ID: "723"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f38"),
+    city: "鹤壁",
+    ID: "724"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f39"),
+    city: "新乡",
+    ID: "725"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3a"),
+    city: "焦作",
+    ID: "726"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3b"),
+    city: "濮阳",
+    ID: "727"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3c"),
+    city: "许昌",
+    ID: "728"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3d"),
+    city: "漯河",
+    ID: "729"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3e"),
+    city: "三门峡",
+    ID: "730"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f3f"),
+    city: "南阳",
+    ID: "731"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f40"),
+    city: "商丘",
+    ID: "732"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f41"),
+    city: "信阳",
+    ID: "733"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f42"),
+    city: "周口",
+    ID: "734"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f43"),
+    city: "驻马店",
+    ID: "735"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f44"),
+    city: "武汉",
+    ID: "736"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f45"),
+    city: "黄石",
+    ID: "737"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f46"),
+    city: "十堰",
+    ID: "738"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f47"),
+    city: "宜昌",
+    ID: "739"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f48"),
+    city: "襄阳",
+    ID: "740"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f49"),
+    city: "鄂州",
+    ID: "741"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4a"),
+    city: "荆门",
+    ID: "742"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4b"),
+    city: "孝感",
+    ID: "743"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4c"),
+    city: "荆州",
+    ID: "744"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4d"),
+    city: "黄冈",
+    ID: "745"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4e"),
+    city: "咸宁",
+    ID: "746"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f4f"),
+    city: "随州",
+    ID: "747"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f50"),
+    city: "恩施",
+    ID: "748"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f51"),
+    city: "长沙",
+    ID: "749"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f52"),
+    city: "株洲",
+    ID: "750"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f53"),
+    city: "湘潭",
+    ID: "751"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f54"),
+    city: "衡阳",
+    ID: "752"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f55"),
+    city: "邵阳",
+    ID: "753"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f56"),
+    city: "岳阳",
+    ID: "754"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f57"),
+    city: "常德",
+    ID: "755"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f58"),
+    city: "张家界",
+    ID: "756"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f59"),
+    city: "益阳",
+    ID: "757"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5a"),
+    city: "郴州",
+    ID: "758"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5b"),
+    city: "永州",
+    ID: "759"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5c"),
+    city: "怀化",
+    ID: "760"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5d"),
+    city: "娄底",
+    ID: "761"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5e"),
+    city: "湘西",
+    ID: "762"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f5f"),
+    city: "广州",
+    ID: "763"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f60"),
+    city: "韶关",
+    ID: "764"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f61"),
+    city: "深圳",
+    ID: "765"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f62"),
+    city: "珠海",
+    ID: "766"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f63"),
+    city: "汕头",
+    ID: "767"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f64"),
+    city: "佛山",
+    ID: "768"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f65"),
+    city: "江门",
+    ID: "769"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f66"),
+    city: "湛江",
+    ID: "770"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f67"),
+    city: "茂名",
+    ID: "771"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f68"),
+    city: "肇庆",
+    ID: "772"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f69"),
+    city: "惠州",
+    ID: "773"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6a"),
+    city: "梅州",
+    ID: "774"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6b"),
+    city: "汕尾",
+    ID: "775"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6c"),
+    city: "河源",
+    ID: "776"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6d"),
+    city: "阳江",
+    ID: "777"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6e"),
+    city: "清远",
+    ID: "778"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f6f"),
+    city: "东莞",
+    ID: "779"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f70"),
+    city: "中山",
+    ID: "780"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f71"),
+    city: "潮州",
+    ID: "781"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f72"),
+    city: "揭阳",
+    ID: "782"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f73"),
+    city: "云浮",
+    ID: "783"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f74"),
+    city: "南宁",
+    ID: "785"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f75"),
+    city: "柳州",
+    ID: "786"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f76"),
+    city: "桂林",
+    ID: "787"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f77"),
+    city: "梧州",
+    ID: "788"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f78"),
+    city: "北海",
+    ID: "789"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f79"),
+    city: "防城港",
+    ID: "790"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7a"),
+    city: "钦州",
+    ID: "791"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7b"),
+    city: "贵港",
+    ID: "792"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7c"),
+    city: "玉林",
+    ID: "793"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7d"),
+    city: "百色",
+    ID: "794"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7e"),
+    city: "贺州",
+    ID: "795"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f7f"),
+    city: "河池",
+    ID: "796"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f80"),
+    city: "海口",
+    ID: "799"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f81"),
+    city: "三亚",
+    ID: "800"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f82"),
+    city: "成都",
+    ID: "801"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f83"),
+    city: "自贡",
+    ID: "802"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f84"),
+    city: "攀枝花",
+    ID: "803"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f85"),
+    city: "泸州",
+    ID: "804"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f86"),
+    city: "德阳",
+    ID: "805"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f87"),
+    city: "绵阳",
+    ID: "806"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f88"),
+    city: "广元",
+    ID: "807"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f89"),
+    city: "遂宁",
+    ID: "808"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8a"),
+    city: "内江",
+    ID: "809"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8b"),
+    city: "乐山",
+    ID: "810"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8c"),
+    city: "南充",
+    ID: "811"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8d"),
+    city: "眉山",
+    ID: "812"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8e"),
+    city: "宜宾",
+    ID: "813"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f8f"),
+    city: "广安",
+    ID: "814"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f90"),
+    city: "达州",
+    ID: "815"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f91"),
+    city: "雅安",
+    ID: "816"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f92"),
+    city: "巴中",
+    ID: "817"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f93"),
+    city: "资阳",
+    ID: "818"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f94"),
+    city: "阿坝",
+    ID: "819"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f95"),
+    city: "甘孜",
+    ID: "820"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f96"),
+    city: "凉山",
+    ID: "821"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f97"),
+    city: "贵阳",
+    ID: "822"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f98"),
+    city: "六盘水",
+    ID: "823"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f99"),
+    city: "遵义",
+    ID: "824"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9a"),
+    city: "安顺",
+    ID: "825"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9b"),
+    city: "铜仁",
+    ID: "826"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9c"),
+    city: "黔西南",
+    ID: "827"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9d"),
+    city: "毕节",
+    ID: "828"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9e"),
+    city: "黔东南",
+    ID: "829"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900f9f"),
+    city: "黔南",
+    ID: "830"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa0"),
+    city: "昆明",
+    ID: "831"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa1"),
+    city: "曲靖",
+    ID: "832"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa2"),
+    city: "玉溪",
+    ID: "833"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa3"),
+    city: "保山",
+    ID: "834"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa4"),
+    city: "昭通",
+    ID: "835"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa5"),
+    city: "楚雄",
+    ID: "836"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa6"),
+    city: "红河",
+    ID: "837"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa7"),
+    city: "文山",
+    ID: "838"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa8"),
+    city: "西双版纳",
+    ID: "840"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fa9"),
+    city: "大理",
+    ID: "841"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900faa"),
+    city: "德宏",
+    ID: "842"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fab"),
+    city: "丽江",
+    ID: "843"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fac"),
+    city: "怒江",
+    ID: "844"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fad"),
+    city: "迪庆",
+    ID: "845"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fae"),
+    city: "临沧",
+    ID: "846"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900faf"),
+    city: "拉萨",
+    ID: "847"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb0"),
+    city: "昌都",
+    ID: "848"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb1"),
+    city: "山南",
+    ID: "849"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb2"),
+    city: "日喀则",
+    ID: "850"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb3"),
+    city: "那曲",
+    ID: "851"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb4"),
+    city: "阿里",
+    ID: "852"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb5"),
+    city: "林芝",
+    ID: "853"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb6"),
+    city: "西安",
+    ID: "854"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb7"),
+    city: "铜川",
+    ID: "855"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb8"),
+    city: "宝鸡",
+    ID: "856"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fb9"),
+    city: "咸阳",
+    ID: "857"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fba"),
+    city: "渭南",
+    ID: "858"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fbb"),
+    city: "延安",
+    ID: "859"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fbc"),
+    city: "汉中",
+    ID: "860"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fbd"),
+    city: "榆林",
+    ID: "861"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fbe"),
+    city: "安康",
+    ID: "862"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fbf"),
+    city: "商洛",
+    ID: "863"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc0"),
+    city: "兰州",
+    ID: "864"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc1"),
+    city: "嘉峪关",
+    ID: "865"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc2"),
+    city: "金昌",
+    ID: "866"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc3"),
+    city: "白银",
+    ID: "867"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc4"),
+    city: "天水",
+    ID: "868"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc5"),
+    city: "武威",
+    ID: "869"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc6"),
+    city: "张掖",
+    ID: "870"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc7"),
+    city: "平凉",
+    ID: "871"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc8"),
+    city: "酒泉",
+    ID: "872"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fc9"),
+    city: "庆阳",
+    ID: "873"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fca"),
+    city: "定西",
+    ID: "874"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fcb"),
+    city: "陇南",
+    ID: "875"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fcc"),
+    city: "临夏",
+    ID: "876"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fcd"),
+    city: "甘南",
+    ID: "877"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fce"),
+    city: "西宁",
+    ID: "878"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fcf"),
+    city: "海东",
+    ID: "879"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd0"),
+    city: "海北",
+    ID: "880"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd1"),
+    city: "黄南",
+    ID: "881"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd2"),
+    city: "海南州",
+    ID: "882"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd3"),
+    city: "果洛",
+    ID: "883"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd4"),
+    city: "玉树",
+    ID: "884"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd5"),
+    city: "海西",
+    ID: "885"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd6"),
+    city: "银川",
+    ID: "886"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd7"),
+    city: "石嘴山",
+    ID: "887"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd8"),
+    city: "吴忠",
+    ID: "888"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fd9"),
+    city: "固原",
+    ID: "889"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fda"),
+    city: "乌鲁木齐",
+    ID: "890"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fdb"),
+    city: "克拉玛依",
+    ID: "891"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fdc"),
+    city: "吐鲁番",
+    ID: "892"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fdd"),
+    city: "哈密",
+    ID: "893"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fde"),
+    city: "昌吉",
+    ID: "894"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fdf"),
+    city: "博尔塔拉",
+    ID: "895"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe0"),
+    city: "巴音郭楞",
+    ID: "896"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe1"),
+    city: "阿克苏",
+    ID: "897"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe2"),
+    city: "克孜勒苏柯尔克孜",
+    ID: "898"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe3"),
+    city: "喀什",
+    ID: "899"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe4"),
+    city: "和田",
+    ID: "900"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe5"),
+    city: "伊犁",
+    ID: "901"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe6"),
+    city: "塔城",
+    ID: "902"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe7"),
+    city: "阿勒泰",
+    ID: "903"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe8"),
+    city: "来宾",
+    ID: "904"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fe9"),
+    city: "崇左",
+    ID: "905"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fea"),
+    city: "中卫",
+    ID: "906"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900feb"),
+    city: "洋浦市/洋浦经济开发区",
+    ID: "907"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fec"),
+    city: "天津",
+    ID: "531"
+} ]);
+db.getCollection("cityinfo").insert([ {
+    _id: ObjectId("60c842743507d042d4900fed"),
+    city: "苏州",
+    ID: "640"
+} ]);
+
+// ----------------------------
+// Collection structure for employinfo
+// ----------------------------
+db.getCollection("employinfo").drop();
+db.createCollection("employinfo");
+
+// ----------------------------
+// Documents of employinfo
+// ----------------------------
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8a"),
+    "工作名": "Java微服务",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', '架构设计', '微服务', 'SPRINGCLOUD', '大数据', 'B端', 'Java']",
+    "公司": "北京世纪高通科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8b"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "长城软件"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8c"),
+    "工作名": "java开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring']",
+    "公司": "北京探马企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8d"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3.5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Eclipse', 'J2EE', '架构设计', 'PostgreSQL']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8e"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "3万-5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'J2EE', 'SQL', '数据库']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b8f"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "[]",
+    "公司": "北京银丰新融科技开发有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b90"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', 'J2EE', 'SQL', 'HTML/CSS', 'Weblogic', 'Java']",
+    "公司": "北京才鼎通信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b91"),
+    "工作名": "java高级研发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java', 'MySQL', 'Linux', '数据库']",
+    "公司": "北京图盟科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b92"),
+    "工作名": "高级Java开发工程师 (MJ001705)",
+    "薪水": "1.8万-3.2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京神州汽车租赁有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b93"),
+    "工作名": "资深Java工程师 (MJ001580)",
+    "薪水": "3万-6万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京神州汽车租赁有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b94"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'Python']",
+    "公司": "楚天龙股份有限公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b95"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Hibernate', 'Spring', 'Struts', 'HTML5', 'Weblogic', 'Tomcat']",
+    "公司": "中数通信息有限公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b96"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring']",
+    "公司": "北京小豆企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b97"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Javascript', 'Struts', 'MySQL']",
+    "公司": "浪潮集团"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b98"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'SQL', 'Kafka', 'Docker', '后端开发', 'J2EE', 'Linux']",
+    "公司": "迪科远望"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b99"),
+    "工作名": "java中级工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京华鑫杰瑞计算机系统工程有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.7万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'JS', 'jQuery', 'Eclipse', 'Spring', 'Javascript', 'Hadoop']",
+    "公司": "普元信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9b"),
+    "工作名": "java初级开发工程师",
+    "薪水": "5千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', '项目实施', '数据库', 'SQL', 'SQL Server', 'ERP']",
+    "公司": "华砼科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9c"),
+    "工作名": "高级java开发工程师",
+    "薪水": "9千-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "[]",
+    "公司": "普德施(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9d"),
+    "工作名": "Java开发工程师",
+    "薪水": "7千-1.4万",
+    "地点": "北京-西城区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "中科软科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9e"),
+    "工作名": "【支付收单】高级Java开发工程师",
+    "薪水": "2.2万-3万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['支付 JAVA']",
+    "公司": "易联汇华"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821b9f"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['MySQL', 'SQL', 'SPRINGBOOT', 'SPRINGCLOUD', 'Spring']",
+    "公司": "北京振中电子技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba0"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-1.9万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "先进数通"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba1"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'SQL', 'MySQL', 'Dubbo', 'ElasticSearch', 'Maven', '系统架构']",
+    "公司": "北京音泰思计算机技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba2"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Javascript', 'Servlet', 'JSP']",
+    "公司": "北京羽实箫恩信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba3"),
+    "工作名": "高级java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京-丰台区",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Spring', '数据库', 'MySQL', 'SQL', 'J2EE', 'Java', 'Linux']",
+    "公司": "北京嘉和远达资本管理有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba4"),
+    "工作名": "高级Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'ERP', '数据库', 'Dubbo']",
+    "公司": "北京长城系统科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba5"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Linux', 'Maven', 'Spring']",
+    "公司": "佳佳供应链管理（廊坊）有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba6"),
+    "工作名": "中高级JAVA开发工程师",
+    "薪水": "1.8万-3.5万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['高并发']",
+    "公司": "深圳市锐明技术"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba7"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "10年以上",
+    "学历": "本科",
+    "技能": "['后端开发', 'JavaWeb', '项目管理']",
+    "公司": "北京中科院软件中心有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba8"),
+    "工作名": "Java微服务",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', '架构设计', '微服务', 'SPRINGCLOUD', '大数据', 'B端', 'Java']",
+    "公司": "北京世纪高通科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ba9"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "长城软件"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821baa"),
+    "工作名": "java开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring']",
+    "公司": "北京探马企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bab"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3.5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Eclipse', 'J2EE', '架构设计', 'PostgreSQL']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bac"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "3万-5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'J2EE', 'SQL', '数据库']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bad"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "[]",
+    "公司": "北京银丰新融科技开发有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bae"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', 'J2EE', 'SQL', 'HTML/CSS', 'Weblogic', 'Java']",
+    "公司": "北京才鼎通信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821baf"),
+    "工作名": "java高级研发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java', 'MySQL', 'Linux', '数据库']",
+    "公司": "北京图盟科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb0"),
+    "工作名": "高级Java开发工程师 (MJ001705)",
+    "薪水": "1.8万-3.2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京神州汽车租赁有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb1"),
+    "工作名": "资深Java工程师 (MJ001580)",
+    "薪水": "3万-6万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京神州汽车租赁有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb2"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'Python']",
+    "公司": "楚天龙股份有限公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb3"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Hibernate', 'Spring', 'Struts', 'HTML5', 'Weblogic', 'Tomcat']",
+    "公司": "中数通信息有限公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb4"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring']",
+    "公司": "北京小豆企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb5"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Javascript', 'Struts', 'MySQL']",
+    "公司": "浪潮集团"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb6"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'SQL', 'Kafka', 'Docker', '后端开发', 'J2EE', 'Linux']",
+    "公司": "迪科远望"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb7"),
+    "工作名": "java中级工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京华鑫杰瑞计算机系统工程有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb8"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.7万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'JS', 'jQuery', 'Eclipse', 'Spring', 'Javascript', 'Hadoop']",
+    "公司": "普元信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bb9"),
+    "工作名": "java初级开发工程师",
+    "薪水": "5千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', '项目实施', '数据库', 'SQL', 'SQL Server', 'ERP']",
+    "公司": "华砼科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bba"),
+    "工作名": "高级java开发工程师",
+    "薪水": "9千-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "[]",
+    "公司": "普德施(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bbb"),
+    "工作名": "Java开发工程师",
+    "薪水": "7千-1.4万",
+    "地点": "北京-西城区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "中科软科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bbc"),
+    "工作名": "【支付收单】高级Java开发工程师",
+    "薪水": "2.2万-3万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['支付 JAVA']",
+    "公司": "易联汇华"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bbd"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['MySQL', 'SQL', 'SPRINGBOOT', 'SPRINGCLOUD', 'Spring']",
+    "公司": "北京振中电子技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bbe"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-1.9万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "先进数通"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bbf"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'SQL', 'MySQL', 'Dubbo', 'ElasticSearch', 'Maven', '系统架构']",
+    "公司": "北京音泰思计算机技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc0"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Javascript', 'Servlet', 'JSP']",
+    "公司": "北京羽实箫恩信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc1"),
+    "工作名": "高级java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京-丰台区",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Spring', '数据库', 'MySQL', 'SQL', 'J2EE', 'Java', 'Linux']",
+    "公司": "北京嘉和远达资本管理有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc2"),
+    "工作名": "高级Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'ERP', '数据库', 'Dubbo']",
+    "公司": "北京长城系统科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc3"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Linux', 'Maven', 'Spring']",
+    "公司": "佳佳供应链管理（廊坊）有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc4"),
+    "工作名": "中高级JAVA开发工程师",
+    "薪水": "1.8万-3.5万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['高并发']",
+    "公司": "深圳市锐明技术"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc5"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "10年以上",
+    "学历": "本科",
+    "技能": "['后端开发', 'JavaWeb', '项目管理']",
+    "公司": "北京中科院软件中心有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc6"),
+    "工作名": "java开发",
+    "薪水": "3万-6万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['后端开发']",
+    "公司": "雪球(北京)技术开发有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc7"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.7万-2万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java', 'MyBatis', 'Netty']",
+    "公司": "北京千品猫科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc8"),
+    "工作名": "Java开发工程师",
+    "薪水": "9千-1.4万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Javascript', 'Dubbo', '后端开发', 'SPRINGBOOT']",
+    "公司": "袭客(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bc9"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.1万-1.7万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'MyBatis', 'MySQL', '后端开发', 'Dubbo', 'Java', 'SPRING MVC']",
+    "公司": "佳德智合"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bca"),
+    "工作名": "中级软件开发工程师（Java）",
+    "薪水": "1.3万-2.4万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'SPRINGCLOUD', 'Linux']",
+    "公司": "中体彩科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bcb"),
+    "工作名": "Java开发工程师",
+    "薪水": "9千-1.8万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "学历不限",
+    "技能": "['Java']",
+    "公司": "北京中科院软件中心有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bcc"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.8万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "央视频融媒体发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bcd"),
+    "工作名": "高级java开发工程师",
+    "薪水": "2.5万-3.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MyBatis', 'Dubbo', 'PostgreSQL', 'RabbitMQ', '架构设计']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bce"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '系统架构', '架构设计', 'Linux']",
+    "公司": "北京壹途因私出入境服务有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bcf"),
+    "工作名": "软件开发岗（JAVA方向）",
+    "薪水": "面议",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'PostgreSQL', '微服务']",
+    "公司": "中邮理财有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd0"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-大兴区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['前端开发', '后端开发', 'Spring', 'MySQL']",
+    "公司": "北京联合盈鑫信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd1"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京佳讯飞鸿电气股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd2"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "华农保险"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd3"),
+    "工作名": " JAVA中级软件开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['J2EE', 'MySQL', 'Java']",
+    "公司": "内蒙古电子口岸股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd4"),
+    "工作名": "中级Java开发工程师",
+    "薪水": "1.4万-1.8万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['微服务架构', 'SPRING CLOUD', 'Netty', 'Spark', 'Redis', '消息队列', 'MySQL', '后端开发']",
+    "公司": "普天新能源"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd5"),
+    "工作名": "java软件开发工程师-中电标协-信息服务部",
+    "薪水": "8千-1.3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Javascript', 'Linux', 'SQL']",
+    "公司": "中国电子工业标准化技术协会"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd6"),
+    "工作名": "java后端开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MongoDB', '后端开发']",
+    "公司": "北京易诚高科科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd7"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'Java']",
+    "公司": "北京探马企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd8"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'MyBatis', 'Linux', 'Tomcat', 'Weblogic']",
+    "公司": "北京科临易检信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bd9"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', 'MySQL', 'TCP/IP', 'Java', 'JVM', 'Linux']",
+    "公司": "银河互联网电视有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bda"),
+    "工作名": "java软件开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'JSP', 'Spring', 'MyBatis', 'MySQL', '数据库', 'J2EE', 'Tomcat']",
+    "公司": "北京北斗众航科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bdb"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'MyBatis', 'Linux']",
+    "公司": "北京科临易检信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bdc"),
+    "工作名": "Java开发",
+    "薪水": "1.5万-2万",
+    "地点": "北京-东城区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'SPRINGCLOUD']",
+    "公司": "北京联合盈鑫信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bdd"),
+    "工作名": "Java开发",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', '数据库']",
+    "公司": "康乾大成"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bde"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'Linux', 'Weblogic', 'WebSphere', 'DB2', 'SQL Server', 'Tomcat']",
+    "公司": "北京捷软世纪信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bdf"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Spring', 'MyBatis', 'Dubbo', 'SPRINGBOOT', 'SPRINGCLOUD', 'SPRINGMVC']",
+    "公司": "中软联动公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be0"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.9万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', '系统架构', 'MySQL', 'SPRINGBOOT', 'SPRINGCLOUD']",
+    "公司": "北京行展软件科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be1"),
+    "工作名": "JAVA开发",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MySQL', 'Hibernate', 'Tomcat', 'Struts']",
+    "公司": "武汉合远信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be2"),
+    "工作名": "初级java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-朝阳区",
+    "经验": "1年以下",
+    "学历": "本科",
+    "技能": "['Java', 'SQL', 'JS']",
+    "公司": "北京鸿联九五信息产业有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be3"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-石景山区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'JavaWeb', 'J2EE', '后端开发', 'Struts', 'MyBatis', 'SSH']",
+    "公司": "中科软科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be4"),
+    "工作名": "Java开发工程师（初中高级）",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "亚联(天津)信息技术有限责任公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be5"),
+    "工作名": "Java开发（初/中级）",
+    "薪水": "面议",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', '后端开发', 'SPRING CLOUD']",
+    "公司": "智联RPO"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be6"),
+    "工作名": "中级Java开发工程师",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MyBatis']",
+    "公司": "安信天行"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be7"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Eclipse', 'Myeclipse', 'jQuery', '后端开发', '微服务']",
+    "公司": "北京华正明天信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be8"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'DB2', 'HTML5', 'SPRING MVC', 'SPRINGBOOT', 'Oracle']",
+    "公司": "易诚高科(大连)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821be9"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京-西城区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MyBatis', 'SQL']",
+    "公司": "北京医邦智信科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bea"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', 'Python', 'SQL', 'Shell']",
+    "公司": "北京太平宝迪科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821beb"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.1万-1.8万",
+    "地点": "北京-昌平区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'SQL']",
+    "公司": "北京振中电子技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bec"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Linux', '数据挖掘', 'J2EE']",
+    "公司": "北京融信数联科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bed"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.8万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'JVM', 'Spring', '后端开发', 'SQL', 'MySQL', 'MongoDB']",
+    "公司": "北京智工场物联科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bee"),
+    "工作名": "Java开发工程师",
+    "薪水": "6千-1.2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', '后端开发']",
+    "公司": "北京国欣数码科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bef"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.6万",
+    "地点": "北京-东城区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Maven', 'MySQL', 'RabbitMQ']",
+    "公司": "北京腾信软创科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf0"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', '数据库', 'MySQL']",
+    "公司": "北京东方振动和噪声技术研究所"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf1"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-丰台区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'DB2', 'HTML5', 'SPRING MVC', 'SPRINGBOOT', 'Oracle']",
+    "公司": "易诚高科(大连)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf2"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "不限",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "金润科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf3"),
+    "工作名": "Java开发",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['SPRINGBOOT', 'SPRINGCLOUD', 'MyBatis', 'RabbitMQ', 'ActiveMQ', 'MySQL']",
+    "公司": "喜鹊共享科技(天津)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf4"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-丰台区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'DB2', 'HTML5', 'SPRING MVC', 'SPRINGBOOT', 'Oracle']",
+    "公司": "易诚高科(大连)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf5"),
+    "工作名": "Java开发工程师转型ETL顾问岗位",
+    "薪水": "7千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['项目实施']",
+    "公司": "北京贝则科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf6"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京途图时代科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf7"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['JVM', 'Java', 'MySQL', 'SQL', 'Spring', 'MyBatis']",
+    "公司": "讯腾智科"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf8"),
+    "工作名": "Java开发工程师（应用系统开发及部署）",
+    "薪水": "1.5万-2.2万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java', '后端开发', '应用部署', '自动化运维']",
+    "公司": "中征(北京)征信有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bf9"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', '后端开发']",
+    "公司": "北京东方坦达科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bfa"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'Spring']",
+    "公司": "威努特"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bfb"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "澜途集思生态科技集团有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bfc"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1.6万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'SQL', 'Dubbo', '后端开发', 'Maven']",
+    "公司": "中科软科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bfd"),
+    "工作名": "Java开发工程师（浪潮通信）",
+    "薪水": "9千-1.2万",
+    "地点": "北京-西城区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring']",
+    "公司": "（浪潮集团）浪潮世科信息技术有限公司LCW"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bfe"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-西城区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'MyBatis', '架构设计']",
+    "公司": "苏州人之众信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821bff"),
+    "工作名": "Java开发工程师",
+    "薪水": "9千-1.5万",
+    "地点": "北京-西城区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "致得科创软件(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c00"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京-西城区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "杭州远传新业科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c01"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Web前端', '后端开发']",
+    "公司": "远光能源互联网"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c02"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', '后端开发', 'MyBatis', 'RabbitMQ']",
+    "公司": "北京博英科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c03"),
+    "工作名": "JAVA 开发工程师",
+    "薪水": "1.8万-2.5万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['后端开发']",
+    "公司": "人民金服"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c04"),
+    "工作名": "高级Java开发",
+    "薪水": "1万-1.5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'SSH', 'Spring', 'Hibernate', 'MyBatis', 'MySQL', 'Maven', 'Eclipse']",
+    "公司": "河南汇智通信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c05"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'SQL', '后端开发', 'MySQL']",
+    "公司": "网联客(北京)数字科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c06"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Node.js', 'MySQL', 'Spark']",
+    "公司": "北京理工新源信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c07"),
+    "工作名": "高级Java开发工程师",
+    "薪水": "1万-1.1万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "河南汇智通信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c08"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'Hibernate', 'SQL', 'jQuery', 'JS']",
+    "公司": "优必爱"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c09"),
+    "工作名": "高级java开发工程师",
+    "薪水": "面议",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "中邮信息科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java', 'MyBatis', 'shiro', 'SPRINGBOOT', 'SPRINGCLOUD', 'REDIS、ES']",
+    "公司": "红盾大数据"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0b"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Javascript', '后端开发']",
+    "公司": "北京理工新源信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0c"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1.5万",
+    "地点": "北京",
+    "经验": "无经验",
+    "学历": "本科",
+    "技能": "['Spring', 'SQL', '后端开发', 'MySQL']",
+    "公司": "国双科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0d"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发']",
+    "公司": "高伟达"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0e"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'SQL']",
+    "公司": "北京华洋峻峰信息工程股份公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c0f"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1.5万-2.8万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "软告科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c10"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.1万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Redis']",
+    "公司": "北京万智千鸿科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c11"),
+    "工作名": "初级java开发工程师",
+    "薪水": "8千-1.2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'SPRINGCLOUD', 'SPRINGBOOT']",
+    "公司": "宝利软件"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c12"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2.3万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发']",
+    "公司": "深圳市锐明技术"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c13"),
+    "工作名": "java驻场开发工程师",
+    "薪水": "9千-1.1万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['前端开发', '后端开发', 'MySQL', 'SQL Server', '数据库', '小程序']",
+    "公司": "北京软创科华技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c14"),
+    "工作名": "java中级开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['JAVA CORE', 'J2EE', 'Javascript', 'MySQL', 'Oracle', 'Redis', 'MongoDB', 'Maven']",
+    "公司": "北京子新科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c15"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', '系统架构', 'Dubbo', '后端开发', 'Spring']",
+    "公司": "万联易达物流科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c16"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'SQL', 'MyBatis', 'Maven', 'ElasticSearch', '小程序']",
+    "公司": "淘数科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c17"),
+    "工作名": "高级Java开发工程师",
+    "薪水": "2万-4万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京一起网科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c18"),
+    "工作名": "高级java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京大账房信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c19"),
+    "工作名": "Java开发工程师（应届）",
+    "薪水": "6千-9千",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Spring', 'MyBatis', '后端开发', 'MySQL', '数据库', 'Java']",
+    "公司": "南天电子"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1a"),
+    "工作名": "java开发工程师",
+    "薪水": "1.5万-1.8万",
+    "地点": "北京-西城区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'JVM', 'Struts', 'MyBatis']",
+    "公司": "金锐软件技术(杭州)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1b"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-顺义区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '架构设计', 'Spring', 'Hibernate']",
+    "公司": "中都物流有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1c"),
+    "工作名": "Java开发工程师",
+    "薪水": "6千-1.2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Maven', '后端开发', 'Spring', 'MySQL', 'Java']",
+    "公司": "易宝电脑系统（北京）有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1d"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发', 'Dubbo']",
+    "公司": "北京探马企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1e"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发', 'MySQL']",
+    "公司": "广东航宇卫星科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c1f"),
+    "工作名": "中高级java开发工程师",
+    "薪水": "1.3万-1.9万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Eclipse', 'Spring', 'Dubbo']",
+    "公司": "中科汇联"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c20"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', 'Spring', 'MySQL']",
+    "公司": "北京探马企服科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c21"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1万-1.8万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京新地世达科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c22"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MySQL', 'Tomcat']",
+    "公司": "北京文创动力信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c23"),
+    "工作名": "Java开发工程师(研发中心）",
+    "薪水": "1.1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['MySQL', 'Spring', 'SQL', 'Junit', 'Java', 'JS', '后端开发', '数据库']",
+    "公司": "北京航天金税技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c24"),
+    "工作名": "中级java开发",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MyBatis', 'JAVA开发', '后端开发', '数据库']",
+    "公司": "海顿中科"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c25"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['J2EE', '分布式']",
+    "公司": "北京埃可斯科技有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c26"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.8万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['J2EE', 'JSP', 'Servlet', 'SSH', 'Spring', 'Java']",
+    "公司": "北京万方软件有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c27"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', '微服务', 'SPRING CLOUD', 'Dubbo']",
+    "公司": "人民日报媒体技术"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c28"),
+    "工作名": "高级java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京芯火科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c29"),
+    "工作名": "java开发 （中级）",
+    "薪水": "1万-1.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['MYSQL、REDIS', 'MyBatis', 'SPRING-SECURITY', 'JWT']",
+    "公司": "北京市软通合力信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.8万-2.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'JVM', 'Spring']",
+    "公司": "必果文创(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2b"),
+    "工作名": "java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['MySQL', 'Spring', '后端开发']",
+    "公司": "北京天富勤科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2c"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1.2万",
+    "地点": "北京-石景山区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Spring', 'Javascript', 'MySQL', 'HTML/CSS']",
+    "公司": "中科北纬(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2d"),
+    "工作名": "java 开发工程师",
+    "薪水": "9千-1.5万",
+    "地点": "北京-通州区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', '数据库', 'JAVAFX']",
+    "公司": "北京塔尔旺科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2e"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'MySQL', '后端开发']",
+    "公司": "北京罗格数据科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c2f"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['MySQL', '后端开发', 'SPRING CLOUD', 'Linux', 'JVM', 'Netty', 'C++', 'TCP/IP']",
+    "公司": "北京正达信通科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c30"),
+    "工作名": "JAVA 高级开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '架构设计', 'Spring']",
+    "公司": "软告科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c31"),
+    "工作名": "Java开发工程师（plm项目组）",
+    "薪水": "1.5万-2万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Javascript', 'Java']",
+    "公司": "北京德天博诚科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c32"),
+    "工作名": "中级Java开发工程师",
+    "薪水": "9千-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'MyBatis', 'MySQL', 'J2EE', 'Tomcat']",
+    "公司": "中铁(北京)信息技术服务有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c33"),
+    "工作名": "java后端开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "学历不限",
+    "技能": "['Java', '后端开发', '架构设计', 'MyBatis', 'SQL', '数据库', 'MySQL', 'Spring']",
+    "公司": "北京虎争网络科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c34"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京乾德永达科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c35"),
+    "工作名": "Java/集成/API网关开发工程师",
+    "薪水": "面议",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java', 'Linux', 'Spring', 'Web前端', 'API', '网关', 'ESB', 'JVM调优']",
+    "公司": "智联RPO"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c36"),
+    "工作名": "JAVA软件开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'JS', 'Javascript', 'Web前端', '后端开发', '解决方案']",
+    "公司": "北京迈诺凯投资咨询有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c37"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "2.5万-5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['架构设计', '后端开发', '数据库', 'Java']",
+    "公司": "北京亿虎迎通信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c38"),
+    "工作名": "Java支付开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "上海魔力果信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c39"),
+    "工作名": "软件开发-JAVA后端开发工程师 （方向：产品经理）",
+    "薪水": "8千-1.2万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发', 'MySQL', 'Java']",
+    "公司": "廷禄(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3a"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京德天博诚科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3b"),
+    "工作名": "JAVA软件开发工程师",
+    "薪水": "8千-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '前端开发', '后端开发']",
+    "公司": "北京万方软件有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3c"),
+    "工作名": "java+前端（派驻甲方驻场开发）",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MyBatis', 'jQuery', 'Javascript', '前端开发', '后端开发', 'HTML5', 'JS']",
+    "公司": "北京易信辰科技有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3d"),
+    "工作名": "Java-3年开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Maven', 'Dubbo', '后端开发', 'RabbitMQ']",
+    "公司": "北京融创博信科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3e"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-东城区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京航天金税技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c3f"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京市政交通一卡通有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c40"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Docker', 'SPRINGCLOUD']",
+    "公司": "BoCloud博云"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c41"),
+    "工作名": "java开发+上市公司+周末双休",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'SQL']",
+    "公司": "华夏大地教育网"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c42"),
+    "工作名": "java高级开发工程师",
+    "薪水": "1万-1.8万",
+    "地点": "北京-东城区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '后端开发', '数据库']",
+    "公司": "北京航天金税技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c43"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-2.2万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'MyBatis', 'Web前端']",
+    "公司": "中车信息公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c44"),
+    "工作名": "Java开发工程师",
+    "薪水": "7千-1.3万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'SQL', 'Web前端', '后端开发']",
+    "公司": "银海环球"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c45"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'Javascript']",
+    "公司": "瑞普图视"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c46"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'JVM', 'SQL', 'MySQL', 'Spring']",
+    "公司": "启迪泰明(北京)科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c47"),
+    "工作名": "北京Java开发工程师",
+    "薪水": "8千-1万",
+    "地点": "北京-昌平区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['后端开发', '需求分析', '数据库']",
+    "公司": "北京国信正合科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c48"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MySQL', 'MyBatis', 'SPRING BOOT', 'SPRING CLOUD']",
+    "公司": "惠州市汇聚丰信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c49"),
+    "工作名": "Java开发工程师（点石商务公园）",
+    "薪水": "1万-2万",
+    "地点": "北京-石景山区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'J2EE']",
+    "公司": "中北信"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-1.7万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Javascript', 'J2EE', 'jQuery', 'MyBatis', 'MySQL']",
+    "公司": "北京金水信息技术发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4b"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.2万-1.7万",
+    "地点": "北京-西城区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Spring', 'HTML/CSS', 'jQuery', 'JSP']",
+    "公司": "北京才鼎通科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4c"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MyBatis', 'Dubbo', 'RabbitMQ', 'Java']",
+    "公司": "上海有大信息科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4d"),
+    "工作名": "中级Java开发工程师",
+    "薪水": "1.4万-1.9万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'Java', 'Javascript', '前端开发', 'Linux', 'SQL']",
+    "公司": "北京明天高软科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4e"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.6万-2.2万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'SQL', 'MyBatis']",
+    "公司": "安信天行"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c4f"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.8万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'J2EE', 'MySQL', '数据库', 'Spring', '后端开发', 'SPRINGBOOT', 'SPRINGCLOUD']",
+    "公司": "北京石基大商信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c50"),
+    "工作名": "高级JAVA开发工程师",
+    "薪水": "1.3万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "中智游"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c51"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1万",
+    "地点": "北京-石景山区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', '数据库', 'Tomcat', 'Maven']",
+    "公司": "北京励拓新安安全防范技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c52"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Spring']",
+    "公司": "中软联动公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c53"),
+    "工作名": "JAVA开发工程师（高级）",
+    "薪水": "2.2万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'SQL', 'Dubbo', 'SPRINGBOOT', 'SPRINGCLOUD', 'JAVA 高级']",
+    "公司": "中关村科学城城市大脑股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c54"),
+    "工作名": "java开发助理/实习生",
+    "薪水": "6千-8千",
+    "地点": "北京-昌平区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京国马斯尔福实验室设备有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c55"),
+    "工作名": "java开发工程师",
+    "薪水": "1.2万-1.8万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'Spring', 'MyBatis']",
+    "公司": "北京天江源科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c56"),
+    "工作名": "java开发工程师",
+    "薪水": "8千-1.3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京博雅司成医药科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c57"),
+    "工作名": "Java开发工程师H",
+    "薪水": "1万-1.8万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Linux', 'SPRING CLOUD', 'SOA']",
+    "公司": "北京浩然五洲软件技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c58"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.4万-2.4万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', '后端开发', 'MySQL']",
+    "公司": "安徽因联网络科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c59"),
+    "工作名": "中级java开发工程师",
+    "薪水": "8千-1.3万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京博雅司成医药科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5a"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', '系统架构', 'JVM', 'MySQL', '后端开发', '架构设计', 'Spring']",
+    "公司": "北京石基大商信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5b"),
+    "工作名": "java开发工程师",
+    "薪水": "9千-1.8万",
+    "地点": "北京-朝阳区",
+    "经验": "1年以下",
+    "学历": "本科",
+    "技能": "['HTML/CSS', 'HTML5', 'Hadoop', 'Java', 'Linux', 'MySQL']",
+    "公司": "北京惠淘车科技有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5c"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Dubbo', 'SPRINGBOOT', 'SPRINGCLOUD', 'MySQL', '微服务架构', 'Oracle', 'SAAS']",
+    "公司": "北京铸云网络科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5d"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.6万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'Hadoop', 'Javascript']",
+    "公司": "北京国信会视科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5e"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Oracle', '需求分析', 'MySQL', 'JS', 'Javascript']",
+    "公司": "银海环球"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c5f"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['JVM', 'Spring', 'MyBatis', 'HTML/CSS', 'Javascript', 'Linux', 'MySQL', '微服务框架']",
+    "公司": "北京铸云网络科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c60"),
+    "工作名": "java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-西城区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'Java', 'HTML5']",
+    "公司": "北京金实盈信科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c61"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '微服务开发', 'SPRINGBOOT', 'SPRING CLOUD']",
+    "公司": "宝利软件"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c62"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-1.8万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Dubbo']",
+    "公司": "北京慧摩尔科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c63"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['前端开发']",
+    "公司": "北京盟力星科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c64"),
+    "工作名": "Java开发工程师(高级)",
+    "薪水": "1.5万-2万",
+    "地点": "北京-朝阳区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京国信海慧科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c65"),
+    "工作名": "Java开发工程师",
+    "薪水": "7千-9千",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['通信', 'Java', 'Vue', 'MySQL', 'Linux', '需求分析']",
+    "公司": "北京通和实益电信科学技术研究所有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c66"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring']",
+    "公司": "北京米聚时代科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c67"),
+    "工作名": "JAVA中级开发工程师",
+    "薪水": "1.3万-1.8万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发', 'Hibernate', 'Struts', 'JVM', 'Java', 'Myeclipse', 'JavaWeb']",
+    "公司": "中电科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c68"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MySQL']",
+    "公司": "北京东软越通软件技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c69"),
+    "工作名": "JAVA初级软件开发工程师",
+    "薪水": "8千-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "1年以下",
+    "学历": "大专",
+    "技能": "['J2EE', 'MySQL', 'Java']",
+    "公司": "内蒙古电子口岸股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', 'MySQL', 'SQL', 'Freemarker', 'Weblogic']",
+    "公司": "北京微昂科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6b"),
+    "工作名": "（上市企业）java开发工程师",
+    "薪水": "1.4万-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', '数据库', 'SQL']",
+    "公司": "北京信立方科技发展股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6c"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Web前端', 'Spring']",
+    "公司": "中燕信息"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6d"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.3万-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'SPRINGCLOUD', 'NOSQL数据库', 'Java']",
+    "公司": "优捷信达"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6e"),
+    "工作名": "高级java开发工程师",
+    "薪水": "8千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'Hibernate', 'jQuery', 'Javascript', 'JS']",
+    "公司": "北京新瑞理想软件股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c6f"),
+    "工作名": "java开发工程师（广告系统经验）",
+    "薪水": "2.5万-4万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'JVM', 'RabbitMQ']",
+    "公司": "北京杰望科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c70"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'J2EE', 'Spring', 'SOA', '后端开发', 'MySQL', 'Dubbo', 'Redis']",
+    "公司": "北京行源归本网络科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c71"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "2.5万-4万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', '后端开发']",
+    "公司": "智联招聘"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c72"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MySQL', 'SQL', 'MyBatis']",
+    "公司": "北京一路凯捷科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c73"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'jQuery']",
+    "公司": "北京龙华信远科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c74"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-2.8万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京隆缔文化传媒有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c75"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Maven', 'MySQL', 'Javascript', 'Linux', 'SPRINGBOOT', 'SPRINGSTRUTS2']",
+    "公司": "北京天汇创业软件有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c76"),
+    "工作名": "java开发经理",
+    "薪水": "1.5万-2.2万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MyBatis', '系统架构', 'SPRING MVC', 'SPRING BOOT']",
+    "公司": "北京中兴正远科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c77"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京迅日达信息科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c78"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.3万-1.6万",
+    "地点": "北京-昌平区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'MyBatis', 'Eclipse', 'Java']",
+    "公司": "北京恒佳彤安信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c79"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.6万",
+    "地点": "北京-西城区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['JVM', 'Spring', 'Redis', 'Git']",
+    "公司": "北京安客科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7a"),
+    "工作名": "Java开发",
+    "薪水": "1.3万-1.8万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', 'SPRINGCLOUD']",
+    "公司": "北京天景隆软件科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7b"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '小程序']",
+    "公司": "北京新兴华安智慧科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7c"),
+    "工作名": "Java开发管理",
+    "薪水": "1.5万-2.2万",
+    "地点": "北京-昌平区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'Javascript', '数据库', 'JS', '系统架构']",
+    "公司": "北京晋辉科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7d"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'JVM', 'MySQL', 'SPRINGBOOT', 'SPRINGCLOUD']",
+    "公司": "神州融安科技(北京)有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7e"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京银信长远科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c7f"),
+    "工作名": "后端开发工程师（JAVA）",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['移动开发', '智能合约编程', '区块链', '后端', 'Java']",
+    "公司": "北京森格寰瑞智能科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c80"),
+    "工作名": "Java开发工程师（初中级）",
+    "薪水": "7千-1.4万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', '数据库', 'Linux', 'JSP']",
+    "公司": "北京艾雷朗特软件开发有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c81"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-1.8万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发', 'Hibernate', 'SQL', 'JS', 'Echarts', 'MySQL', 'jQuery']",
+    "公司": "北京建投科信科技发展股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c82"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京晋辉科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c83"),
+    "工作名": "java开发（中高级）",
+    "薪水": "1.5万-2万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Javascript', 'MySQL', '后端开发', 'Jetty', 'JavaWeb']",
+    "公司": "北京国人通教育科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c84"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1.6万-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京神州泰岳信息工程技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c85"),
+    "工作名": "java开发工程师",
+    "薪水": "8千-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Javascript', 'Java', '后端开发', 'MySQL', 'HTML/CSS', 'SQL']",
+    "公司": "北京晋辉科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c86"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MySQL', 'SQL', 'ElasticSearch', 'MongoDB']",
+    "公司": "北京国人通教育科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c87"),
+    "工作名": "Java开发工程师-总部",
+    "薪水": "1万-1.8万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "大童保险服务"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c88"),
+    "工作名": "Java开发（京东-亦庄）",
+    "薪水": "1.5万-2万",
+    "地点": "北京-通州区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Dubbo', 'ZooKeeper', 'SPRING CLOUD', 'Redis', 'SQL', 'Tomcat', 'Hbase']",
+    "公司": "北京汉克时代科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c89"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京-海淀区",
+    "经验": "1-3年",
+    "学历": "大专",
+    "技能": "['Java', 'MySQL', 'Javascript']",
+    "公司": "北京中电信联科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8a"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-丰台区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Python', 'HTML/CSS', 'HTML5', 'SQL', 'MySQL']",
+    "公司": "银河互联网电视有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8b"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.8万",
+    "地点": "北京-门头沟区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring']",
+    "公司": "北京独创时代科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8c"),
+    "工作名": "java开发助理/实习生",
+    "薪水": "6千-8千",
+    "地点": "北京-昌平区",
+    "经验": "不限",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "北京国马斯尔福实验室设备有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8d"),
+    "工作名": "Java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "瑞云(深圳)冷链物流科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8e"),
+    "工作名": "Java开发工程师（万）",
+    "薪水": "1万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '后端开发', 'MySQL', '数据库']",
+    "公司": "北京万智千鸿科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c8f"),
+    "工作名": "Java开发工程师—中级/高级—双休—线上面试",
+    "薪水": "1.5万-2.7万",
+    "地点": "北京-丰台区",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['SQL', 'Java', 'JVM', 'MyBatis', 'Hbase', '云']",
+    "公司": "爱可生"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c90"),
+    "工作名": "java开发工程师（瑞幸）",
+    "薪水": "1万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['小程序', '后端开发']",
+    "公司": "北京浩然五洲软件技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c91"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.2万-2万",
+    "地点": "北京-顺义区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'Java', 'MySQL', 'MongoDB']",
+    "公司": "中消云科技股份有限公司    "
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c92"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.2万-2.2万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "大专",
+    "技能": "['Java', '数据库', '架构设计', 'MySQL']",
+    "公司": "中国采招网"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c93"),
+    "工作名": "java开发工程师-顺义（初中高级）(J10917)",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京-顺义区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['后端开发', 'J2EE', 'Java', 'Spring', 'MySQL']",
+    "公司": "亚联(天津)信息技术有限责任公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c94"),
+    "工作名": "Java开发工程师",
+    "薪水": "9千-1.2万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['MySQL', 'SPRING BOOT', 'MyBatis', 'Hibernate']",
+    "公司": "山西四和创想科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c95"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.4万-1.7万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '数据库', 'Linux', '后端开发']",
+    "公司": "展鸿科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c96"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Spring', 'Netty', 'Tomcat', 'MyBatis', 'SPRINGMVC', 'RESTful']",
+    "公司": "北京安客科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c97"),
+    "工作名": "java开发经理",
+    "薪水": "1.5万-2.5万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', '架构设计', 'J2EE', 'Servlet', 'Tomcat', 'Hibernate']",
+    "公司": "北京北邮中鸿科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c98"),
+    "工作名": "高级Java开发工程师",
+    "薪水": "2万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "中国航空综合技术研究所"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c99"),
+    "工作名": "java开发经理",
+    "薪水": "1.8万-2.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Struts', 'Spring', 'Hibernate', 'HTML/CSS', 'Javascript', 'MySQL', 'SQL', 'HTML5']",
+    "公司": "北京久胜信诚科技发展有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9a"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-1.6万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Dubbo', 'SPRINGBOOT', 'SPRINGCLOUD', 'SPRINGMVC', 'JAVAEE']",
+    "公司": "北京汉克时代科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9b"),
+    "工作名": "高级java开发工程师（北京）",
+    "薪水": "2万-3万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'MySQL', 'MyBatis']",
+    "公司": "中科软科技股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9c"),
+    "工作名": "JAVA开发工程师",
+    "薪水": "1.3万-1.7万",
+    "地点": "北京-丰台区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MyBatis', 'Spring', 'MySQL', 'SPRINGCLOUD']",
+    "公司": "展鸿科技"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9d"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1.6万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'Hibernate', 'MyBatis']",
+    "公司": "北京远光瑞为软件技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9e"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.2万-1.8万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', '后端开发', 'HTML5', 'Javascript', 'HTML/CSS', '前端开发', 'Spring', 'jQuery']",
+    "公司": "北京华正明天信息技术股份有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821c9f"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', 'HTML/CSS', 'Spring', 'MyBatis']",
+    "公司": "有谦软联(北京)信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca0"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京-昌平区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['架构设计']",
+    "公司": "北京国马斯尔福实验室设备有限责任公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca1"),
+    "工作名": "java高级开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['Java', '互联网', '开发']",
+    "公司": "北京天景隆软件科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca2"),
+    "工作名": "Java开发工程师",
+    "薪水": "7千-9千",
+    "地点": "北京-通州区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'MySQL', '数据库', 'SQL', 'Javascript']",
+    "公司": "北京宏诚创新科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca3"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['高级JAVA开发']",
+    "公司": "中科宇图"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca4"),
+    "工作名": "JAVA软件开发工程师（学信网）",
+    "薪水": "1.2万-1.7万",
+    "地点": "北京-西城区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'JSP', 'Javascript', 'SQL', '数据库']",
+    "公司": "学信咨询服务有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca5"),
+    "工作名": "Java软件开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', '3年以上研发经验']",
+    "公司": "法宣在线"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca6"),
+    "工作名": "java后端开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['后端开发', 'Spring', 'MyBatis', 'Java', 'Redis', 'Kafka', 'ZooKeeper']",
+    "公司": "北京瑞达成泰教育科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca7"),
+    "工作名": "Java中级开发工程师",
+    "薪水": "1.2万-1.5万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Python', 'Ruby', 'SQL', 'Linux', '移动开发']",
+    "公司": "北京摩宝科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca8"),
+    "工作名": "中级java开发工程师",
+    "薪水": "1.3万-1.7万",
+    "地点": "北京-通州区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['J2EE', 'MySQL', 'VUE', 'Java', 'SQL', 'WEB']",
+    "公司": "北京宏诚创新科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821ca9"),
+    "工作名": "Java中级开发工程师—福利健全，发展好",
+    "薪水": "1.3万-1.5万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java', 'Spring', 'JavaWeb']",
+    "公司": "致融征信服务(上海)股份有限公司北京分公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821caa"),
+    "工作名": "Java高级开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "5-10年",
+    "学历": "本科",
+    "技能": "['后端开发', 'SQL', 'Linux']",
+    "公司": "中科聚网"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cab"),
+    "工作名": "Java开发工程师",
+    "薪水": "6千-8千",
+    "地点": "北京",
+    "经验": "不限",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京策立信空间技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cac"),
+    "工作名": "JAVA开发-五矿信托(J10160)",
+    "薪水": "1万-1.5万",
+    "地点": "北京-东城区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['前端开发', 'Spring']",
+    "公司": "先进数通"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cad"),
+    "工作名": "Java开发工程师",
+    "薪水": "8千-1万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', '后端开发', '企业软件', 'SQL']",
+    "公司": "北京华通凯普科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cae"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-1.5万",
+    "地点": "北京",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java']",
+    "公司": "藜麦信息"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821caf"),
+    "工作名": "高级java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-大兴区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['Java', 'Spring', 'MyBatis', 'Dubbo', '后端开发']",
+    "公司": "北京世纪保众"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb0"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京-石景山区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Spring', 'MyBatis', 'TCP/IP']",
+    "公司": "捷程易信(北京)信息技术有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb1"),
+    "工作名": "Java开发工程师",
+    "薪水": "1.5万-2万",
+    "地点": "北京",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京实惠多多港购物中心有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb2"),
+    "工作名": "Java开发工程师",
+    "薪水": "1万-2万",
+    "地点": "北京-朝阳区",
+    "经验": "3-5年",
+    "学历": "大专",
+    "技能": "['Java']",
+    "公司": "北京优创联动科技有限公司"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb3"),
+    "工作名": "Java开发工程师（中级）",
+    "薪水": "1万-2万",
+    "地点": "北京-海淀区",
+    "经验": "3-5年",
+    "学历": "本科",
+    "技能": "['MyBatis', 'Linux', 'HTML/CSS', 'jQuery', '数据库', 'Java']",
+    "公司": "智信佳"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb4"),
+    "工作名": "JAVA开发-昆仑银行(J10037)",
+    "薪水": "1万-1.5万",
+    "地点": "北京-昌平区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Spring', '后端开发']",
+    "公司": "先进数通"
+} ]);
+db.getCollection("employinfo").insert([ {
+    _id: ObjectId("60c17cdfcfdf7135c0821cb5"),
+    "工作名": "Java开发工程师（建外）",
+    "薪水": "1万-1.8万",
+    "地点": "北京-朝阳区",
+    "经验": "1-3年",
+    "学历": "本科",
+    "技能": "['Java', 'J2EE', 'Hibernate', 'Spring']",
+    "公司": "赞华(中国)电子系统有限公司"
+} ]);
+
+// ----------------------------
+// Collection structure for skillinfo
+// ----------------------------
+db.getCollection("skillinfo").drop();
+db.createCollection("skillinfo");
+
+// ----------------------------
+// Documents of skillinfo
+// ----------------------------
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fb9"),
+    "": "0",
+    job: "Web",
+    skill: "Web前端,Vue,Javascript,HTML,HTML5,CSS,CSS3,jQuery,前端架构,小程序,移动端,ES6,React.js,AngularJS,Node.js,AJAX,react,Vue.js,webpack,VueX"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fba"),
+    job: "Android",
+    skill: "Android,Java,AndroidStudio,AndroidSDK,sdk,AndroidUI,Framework,C++,AndroidNDK,Kotlin,Linux,测试,androidframework,架构设计,Socket,TCP/IP,多线程开发,C语言,HTML5"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fbb"),
+    "": "2",
+    job: "Python",
+    skill: "Python,Linux,Java,MySQL,数据库,Hadoop,Django,SQL,后端开发,大数据开发,python爬虫,数据库开发,数据仓库,Spark,Hive,C++,Flask,ETL,Scratch,数据处理"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fbc"),
+    "": "3",
+    job: "通信",
+    skill: "通信工程,移动通信,5G,无线通信,网络优化,通信协议,无线网络,,LTE,4G,安装调试,传输网,勘察设计,通信,线路设计,核心网,接入网,无线网络优化,CAD,Linux"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fbd"),
+    "": "4",
+    job: "C++",
+    skill: "C++,嵌入式,C/C++,Linux,嵌入式Linux,QT,ARM,单片机,C语言,驱动开发,C#,STM32,TCP/IP,通信,Python,LinuxC,数据库,MFC,短途货运,C1"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fbe"),
+    "": "5",
+    job: "硬件工程师",
+    skill: "硬件开发,电路设计,PCB设计,原理图设计,单片机,硬件电路设计,硬件测试,硬件调试,智能硬件,器件选型,性能测试,FPGA,STM32,PCB,元器件,嵌入式硬件研发,数字电路设计,,元器件选型,C/C++"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fbf"),
+    "": "6",
+    job: "PHP",
+    skill: "PHP,MySQL,Javascript,Web前端,后端开发,HTML5,HTML,Vue,Linux,CSS,ThinkPHP,小程序,数据库,Laravel,jQuery,CSS3,前端开发,SQL,架构设计,前端架构"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc0"),
+    "": "7",
+    job: "IT运维",
+    skill: "系统运维,Linux,IT支持,网络安全,数据库,网络,MySQL,运维开发,机房运维,桌面运维,Oracle,服务器运维,运维,系统维护,Windows,信息安全,技术支持,网络建设与维护,网络运维,安全"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc1"),
+    job: "产品经理",
+    skill: "B端产品,数据产品,IT/互联网,功能产品,C端产品,需求产品,软件行业,智慧城市,物联网,硬件产品,需求分析,Java,移动端产品,用户产品,人工智能,Vue,Javascript,产品经理,Web前端"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc2"),
+    "": "9",
+    job: "UI设计师",
+    skill: "交互设计,PS,平面设计,移动端设计,UE设计,AI软件,Sketch,手绘,动效设计,UI设计,,风格设定,游戏界面设计,图标绘制,3DMAX,UI,网页设计,AI,界面设计,广告设计"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc3"),
+    "": "10",
+    job: "大数据",
+    skill: "Hadoop,数据分析,大数据开发,Spark,数据仓库,SQL,Hive,Python,数据库,Java,ETL,数据库开发,MySQL,数据挖掘,大数据分析,数据建模,Oracle,Linux,数据处理,Hbase"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc4"),
+    "": "11",
+    job: "算法工程师",
+    skill: "C++,图像处理,深度学习,Python,机器视觉,机器学习,图像算法,MATLAB,图像识别,TensorFlow,算法,pytorch,视觉检测,识别算法,Halcon,数据挖掘,控制算法,模式识别,目标检测"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc5"),
+    "": "12",
+    job: "Java",
+    skill: "Java,Spring,MySQL,后端开发,MyBatis,数据库,SQL,Javascript,Linux,J2EE,SPRINGBOOT,前端开发,架构设计,Dubbo,SPRINGCLOUD,Hibernate,jQuery,系统架构,JS,JVM"
+} ]);
+db.getCollection("skillinfo").insert([ {
+    _id: ObjectId("60cb0b471d5b9a20ec645fc6"),
+    "": "13",
+    job: "游戏开发",
+    skill: "游戏开发,Unity3D,U3D,Java,C#,游戏设计,C++,C/C++,前端开发,Unity3D引擎开发,Unity3D引擎架构,游戏客户端开发,MySQL,Spring,UE4,Linux,后端开发,Javascript,虚拟仿真"
+} ]);
